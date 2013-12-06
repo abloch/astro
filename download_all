@@ -1,0 +1,2 @@
+#!/bin/bash
+for i in $( seq 0 1095 ); do wget `date -d "-$i day" '+http://astroclub.tau.ac.il/ephem/Daily/index.php?Day=%d&Month=%m&Year=%Y&EastLong=35&NorthLat=32&TimeZone=2&MoonPhaseType=0&Equinox=J'` -O $i.html;done
